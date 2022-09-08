@@ -1,0 +1,130 @@
+Part 1 - movie ratings - using numpy. 
+
+Convert this file into a Jupiter notebook. Include the text. Each [] represents a cell where you put the python code. You should read the numpy chapter 2 for this first part. Run all the cells and make sure the answers are visible before submitting the notebook
+
+Part 1 - movie ratings - using numpy
+
+You should read the numpy chapter 2 for this first part. 
+
+
+Include your name and student number here
+
+[]
+
+Import your libraries here (numpy)
+
+[]
+
+
+Define number of users as 5, number of movies as 15
+
+[]
+
+Generate a 15 x 5 or 5 x 15 numpy table filled with random numbers between 1.0 and 9.0. These will represent movie ratings Fill these with randomly generated integers (each integer equally likely).(page 40 and 42, chapter 2). Used a fixed seed so the result is reproducable. 
+
+[]
+
+Divide all the numbers by 2, so that you work with half stars. 
+
+[]
+
+Compute the minimum score that each movie has received. How many movies have the minimum score?
+
+[]
+
+Compute the total score that each movie has received by adding the total score. Store these in a separate array. 
+
+[]
+
+Show the total score for each movie in a histogram.
+
+[]
+
+Compute the average of the total scores for each movie, and look at how far away the scores of each movie are away from the average. Do you think that the total scores are uniformly distributed (each value equally likely)? Of it it closer to a normal distribution (values tend to be fairly close to the average)?
+
+[]
+
+Compute the standard deviation for each movie. Which movie is most divisive (highest standard deviation)? Which movie is least divisive?
+
+[]
+
+
+On our movie website, we only display review texts from users that gave a score of 3 stars or higher. Can you count for each movie how many reviews of 3 stars or more have been received?
+
+Use python code to check whether there a movie that has received both a 4.5 or 5 star review and a one star or 1.5 star review.
+  
+
+
+
+Part 2 - Housing set visualisation 
+
+For this assignment, we will use the Utrecht Housing Data Set, a data set constructed for classes such as this. You can and should read about the dataset here:
+https://ictinstitute.nl/utrecht-housing-dataset/.
+You should read chapters 2,3,4 of the Jake van der Plas book for this assignment. Note that several questions are more open-ended, allowing you to consider different solutions and propose the one that is most fitting. 
+
+
+Import your libraries here (numpy, panda, seaboard)
+
+[]
+
+Load the file and display the first few lines. Does the data match the description from https://ictinstitute.nl/utrecht-housing-dataset/ ?
+
+[]
+
+Retailvalue  is our main feature of interest. Use the describe()  method to print a table summarizing some key statistics of the distribution of these prices. 
+
+[]
+
+Make a histogram that shows how both tax value and retail value are distributed. What relation do you see between tax value and retailvalue in the histogram?
+
+[]
+
+Make a correlation matrix between lot-area, house area, garden-size, buildyear, bathrooms and retailvalue. Which variable is  most correlated to retailvalue? Which variables are most related to each other
+
+[]
+
+Make a scatterplot between retailvalue and the most correlated value. From the scatter plat, formulated a basic valuation formula: e.g. retail value is 100.000 euros + 20.000 per bathroom. It should have a base value + X euro * your input
+
+[]
+
+Add a predicted value column to your dataset using your formula. Show predictedvalue vs retail value as a scatterplot. 
+
+[]
+
+We also want to understand the the relation between location (x-coor and y-coor) and retail value. To do this we analyse for one zipcode. Your zipcode to analyse depends on your month of birth:
+Jan-feb-mar: your zipcode is 3520
+Apr-May-Jun: your zipcode is 3525
+Jul-Aug-Sep: your zipcode is 3528
+Oct-Nov-Dec: your zipcode is 3800
+
+
+
+Define your zipcode. Select the houses in your zipcode and compare the averages of houses in your zip code against the original dataset. Do your houses have larger size / smaller size than average?
+
+[]
+
+Compare the distribution of several values such as build year of your zipcode against all houses. Is the build year distributed differently? Describe the differences. 
+
+[]
+
+Check the minimal and maximal x-coor and y-coor for your zipcode. Rescale so that the x-coor2 varies from -1 to +1 and y-coor varies from -1 to _1. Make a scatter plot to check that it worked.
+
+[]
+
+
+Compute the median house for your zipcode. Describe the characteristics of your house in words: when was it built, how large is it? Garden size, balconies? Is it energy-efficient? Is it a monument?
+
+[]
+
+
+Make a chart that shows if there is a relation between x-coor and retail value for your zipcode. Explain whether you see a relation. Do the same for y-coor
+
+[]
+
+Based on your analysis: Explain in max 100 words whether you think that the data science team should build four models, one for each zipcode? Or is zipcode not that relevant and could one model that ignores zipcode work better? 
+ 
+[]
+
+
+
+
